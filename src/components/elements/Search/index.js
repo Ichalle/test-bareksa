@@ -6,7 +6,12 @@ export default function Search() {
 
   return (
    <div>
-    <Input size="large" placeholder="Search text" suffix={<SearchOutlined />} />
+    <Input
+      size="large"
+      placeholder="Search text"
+      suffix={<SearchOutlined />}
+      data-testid="search-header"
+    />
    </div>
   );
 }
