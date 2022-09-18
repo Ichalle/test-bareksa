@@ -3,7 +3,7 @@ import { BellOutlined } from '@ant-design/icons';
 import { Badge, Button } from 'antd';
 
 const NotificationsHeader = () => (
-  <Button type="text" shape="circle" className='mx-4'>
+  <Button type="text" shape="circle" className='ml-6 mr-4'>
     <Badge dot>
       <BellOutlined
         style={{
