@@ -2,25 +2,24 @@ import * as React from 'react';
 import { Avatar, Dropdown, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 
-const menu = (
-  <Menu
-    items={[
-      {
-        key: '1',
-        label: (
-          <span rel="noopener noreferrer">
-            Todo Menu
-          </span>
-        ),
-      }
-    ]}
-  />
-);
-
-const UserInfoHeader = () => {
+export default function UserInfoHeader() {
+  const menu = (
+    <Menu
+      items={[
+        {
+          key: '1',
+          label: (
+            <span rel="noopener noreferrer">
+              Todo Menu
+            </span>
+          ),
+        }
+      ]}
+    />
+  );
 
   return (
-    <div className='flex items-center px-16'>
+    <div className='flex items-center px-16' data-testid="info-user-header">
       <Avatar
         style={{
           color: '#000',
@@ -43,5 +42,3 @@ const UserInfoHeader = () => {
     </div>
   );
 }
-
-export default UserInfoHeader;
