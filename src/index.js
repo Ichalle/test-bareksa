@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './styles/global.css';
+import 'antd/dist/antd.css';
 import App from './pages/index';
 import reportWebVitals from './reportWebVitals';
 import PageBase from './components/layouts/PageBase'
