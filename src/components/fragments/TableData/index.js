@@ -54,14 +54,15 @@ const TableData = ({
   ];
 
   return (
-    <>
+    <div className='w-full overflow-x-auto md:pl-4'>
       <h2 className='font-bold'>{title}</h2>
       <Table
         columns={columns}
         dataSource={data}
         pagination={{ position: [] }}
+        size="small"
       />
-    </>
+    </div>
   )
 }
 

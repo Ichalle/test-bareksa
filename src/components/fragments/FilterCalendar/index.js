@@ -7,13 +7,13 @@ const FilterCalendar = () => {
     console.log('TODO');
   };
   return (
-    <Card className='p-0'>
+    <Card className='p-0' bodyStyle={{padding: 0}}>
       <Calendar
         fullscreen={false}
         onPanelChange={onPanelChange}
         headerRender={() => {
           return (
-            <div className='flex justify-between mb-2'>
+            <div className='flex justify-between mb-2 p-4'>
               <div className='w-1/3 flex items-center'>
                 <LeftOutlined />
                 <DatePicker picker="month" bordered={false} suffixIcon="" />

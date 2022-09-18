@@ -31,12 +31,14 @@ const ChartData = ({
         <h2 className='font-bold'>{title}</h2>
         <Button size="small">...</Button>
       </div>
-      <Chart
-        options={options}
-        series={series}
-        type={type}
-        width={260}
-      />
+      <div className='flex justify-center'>
+        <Chart
+          options={options}
+          series={series}
+          type={type}
+          width={260}
+        />
+      </div>
     </Card>
   )
 }

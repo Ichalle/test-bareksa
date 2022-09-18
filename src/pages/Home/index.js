@@ -44,7 +44,7 @@ const Home = () => {
   return (
     <div className='bg-white p-4'>
       <Row>
-        <Col span={6} className="px-2">
+        <Col xs={24} md={6} className="mb-4 md:pr-2">
           {
             !loadingFetch && (
               <ChartData
@@ -56,7 +56,7 @@ const Home = () => {
             )
           }
         </Col>
-        <Col span={6} className="px-2">
+        <Col xs={24} md={6} className="mb-4 md:pr-2">
           <ChartData
             title="Users"
             data={[10, 20, 30]}
@@ -64,7 +64,7 @@ const Home = () => {
             type="pie"
           />
         </Col>
-        <Col span={12} className="px-2">
+        <Col xs={24} md={12} className="mb-4">
           <LineChart
             title="Revenue"
             data={[11000, 2200, 11500, 21090, 11700, 11400, 11070]}
@@ -73,10 +73,10 @@ const Home = () => {
         </Col>
       </Row>
       <Row className='mt-4'>
-        <Col span={7} className="px-4">
+        <Col xs={24} xl={7} className="mb-4">
           <FilterCalendar />
         </Col>
-        <Col span={17} className="px-4">
+        <Col xs={24} xl={17} className="mb-4">
           <TableData
             title="Orders"
             data={orders}

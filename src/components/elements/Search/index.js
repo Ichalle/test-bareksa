@@ -5,7 +5,7 @@ import { Input } from 'antd';
 export default function Search() {
 
   return (
-   <div>
+   <div className='hidden md:block'>
     <Input
       size="large"
       placeholder="Search text"
