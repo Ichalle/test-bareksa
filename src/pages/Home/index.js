@@ -72,7 +72,7 @@ const Home = () => {
           />
         </Col>
       </Row>
-      <Row>
+      <Row className='mt-4'>
         <Col span={7} className="px-4">
           <FilterCalendar />
         </Col>

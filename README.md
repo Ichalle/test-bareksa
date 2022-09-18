@@ -1,7 +1,7 @@
 # FE Test Bareksa
 
 Live Demo:
-Open [https://632749132139ab47ea8d3477--tourmaline-sawine-0e8237.netlify.app/](Click Here)
+Open [Click Here](https://632749132139ab47ea8d3477--tourmaline-sawine-0e8237.netlify.app/)
 
 
 In the project directory, you can run:
