@@ -1,4 +1,4 @@
-import { Calendar, DatePicker, Card } from 'antd';
+import { Calendar, DatePicker, Card, Button } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import React from 'react';
 
@@ -28,6 +28,14 @@ const FilterCalendar = () => {
           )
         }}
       />
+      <div className='flex my-6 justify-center'>
+        <Button className='mr-4'>
+          Cancel
+        </Button>
+        <Button style={{backgroundColor: '#82C341'}}>
+          Filter
+        </Button>
+      </div>
     </Card>
   )
 };

@@ -55,7 +55,7 @@ const TableData = ({
 
   return (
     <div className='w-full overflow-x-auto md:pl-4'>
-      <h2 className='font-bold'>{title}</h2>
+      <h2 className='font-bold text-2xl my-6'>{title}</h2>
       <Table
         columns={columns}
         dataSource={data}

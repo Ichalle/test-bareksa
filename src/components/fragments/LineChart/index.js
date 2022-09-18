@@ -55,7 +55,7 @@ const LineChart = ({
     <div className=''>
       <Card>
         <div className='flex justify-between'>
-          <h2 className='font-bold'>{title}</h2>
+          <h2 className='font-bold text-2xl'>{title}</h2>
           <RangePicker picker="month" />
         </div>
         <Chart
