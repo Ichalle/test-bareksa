@@ -1,12 +1,12 @@
 import * as React from 'react';
 
-import Header from '../../elements/Header';
+import { HeaderMain, HeaderSecondary } from '../../elements';
 
 export default function PageBase({ children }) {
-
   return (
     <div className="w-full bg-zinc-200 min-h-screen">
-      <Header />
+      <HeaderMain />
+      <HeaderSecondary />
       {children}
     </div>
   );
