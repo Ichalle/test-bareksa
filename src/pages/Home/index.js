@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
 import { Col, Row } from 'antd';
 
-import { ChartData, LineChart, TableData } from '../../components/fragments';
+import {
+  ChartData,
+  LineChart,
+  TableData,
+  FilterCalendar
+} from '../../components/fragments';
 import axios from '../../api/axios';
 
 const DASHBOARD_URL = 'takehometest/web/dashboard'
@@ -39,7 +44,7 @@ const Home = () => {
   return (
     <div className='bg-white p-4'>
       <Row>
-        <Col span={6} className="px-4">
+        <Col span={6} className="px-2">
           {
             !loadingFetch && (
               <ChartData
@@ -51,7 +56,7 @@ const Home = () => {
             )
           }
         </Col>
-        <Col span={6} className="px-4">
+        <Col span={6} className="px-2">
           <ChartData
             title="Users"
             data={[10, 20, 30]}
@@ -59,7 +64,7 @@ const Home = () => {
             type="pie"
           />
         </Col>
-        <Col span={12} className="px-4">
+        <Col span={12} className="px-2">
           <LineChart
             title="Revenue"
             data={[11000, 2200, 11500, 21090, 11700, 11400, 11070]}
@@ -68,7 +73,9 @@ const Home = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={6} className="px-4">10</Col>
+        <Col span={6} className="px-4">
+          <FilterCalendar />
+        </Col>
         <Col span={18} className="px-4">
           <TableData
             title="Orders"
