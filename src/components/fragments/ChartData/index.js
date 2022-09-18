@@ -22,20 +22,18 @@ const ChartData = ({
   }
 
   return (
-    <div className=''>
-      <Card>
-        <div className='flex justify-between'>
-          <h2 className='font-semibold'>{title}</h2>
-          <Button>...</Button>
-        </div>
-        <Chart
-          options={options}
-          series={series}
-          type={type}
-          width={260}
-        />
-      </Card>
-    </div>
+    <Card>
+      <div className='flex justify-between'>
+        <h2 className='font-bold'>{title}</h2>
+        <Button>...</Button>
+      </div>
+      <Chart
+        options={options}
+        series={series}
+        type={type}
+        width={260}
+      />
+    </Card>
   )
 }
 

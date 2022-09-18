@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Col, Row } from 'antd';
 
-import { ChartData, LineChart } from '../../components/fragments';
+import { ChartData, LineChart, TableData } from '../../components/fragments';
 import axios from '../../api/axios';
 
 const DASHBOARD_URL = 'takehometest/web/dashboard'
@@ -62,8 +62,17 @@ const Home = () => {
         <Col span={12} className="px-4">
           <LineChart
             title="Revenue"
-            data={[11000, 11200, 11500, 11090, 11700, 11400, 11070]}
+            data={[11000, 2200, 11500, 21090, 11700, 11400, 11070]}
             labels={['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']}
+          />
+        </Col>
+      </Row>
+      <Row>
+        <Col span={6} className="px-4">10</Col>
+        <Col span={18} className="px-4">
+          <TableData
+            title="Orders"
+            data={orders}
           />
         </Col>
       </Row>
