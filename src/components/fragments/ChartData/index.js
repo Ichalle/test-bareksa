@@ -28,15 +28,17 @@ const ChartData = ({
   return (
     <Card className='h-full'>
       <div className='flex justify-between'>
-        <h2 className='font-bold'>{title}</h2>
+        <h2 className='font-bold text-2xl capitalize'>{title}</h2>
         <Button size="small">...</Button>
       </div>
-      <Chart
-        options={options}
-        series={series}
-        type={type}
-        width={260}
-      />
+      <div className='flex justify-center'>
+        <Chart
+          options={options}
+          series={series}
+          type={type}
+          width={260}
+        />
+      </div>
     </Card>
   )
 }
