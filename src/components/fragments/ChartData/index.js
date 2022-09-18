@@ -28,7 +28,7 @@ const ChartData = ({
   return (
     <Card className='h-full'>
       <div className='flex justify-between'>
-        <h2 className='font-bold text-2xl'>{title}</h2>
+        <h2 className='font-bold text-2xl capitalize'>{title}</h2>
         <Button size="small">...</Button>
       </div>
       <div className='flex justify-center'>

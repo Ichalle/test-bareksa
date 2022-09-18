@@ -44,11 +44,11 @@ const Home = () => {
   return (
     <div className='bg-white p-4'>
       <Row>
-        <Col xs={24} md={6} className="mb-4 md:pr-2">
+        <Col xs={24} md={6} className="mb-4 md:pr-2" data-testid="chart-data-conversion">
           {
             !loadingFetch && (
               <ChartData
-                title="Conversion"
+                title="conversion"
                 data={conversionValue}
                 labels={conversionLabels}
                 type="pie"
@@ -56,15 +56,15 @@ const Home = () => {
             )
           }
         </Col>
-        <Col xs={24} md={6} className="mb-4 md:pr-2">
+        <Col xs={24} md={6} className="mb-4 md:pr-2" data-testid="chart-data-users">
           <ChartData
-            title="Users"
+            title="users"
             data={[10, 20, 30]}
             labels={['cat#1', 'cat#2', 'cat#3']}
             type="pie"
           />
         </Col>
-        <Col xs={24} md={12} className="mb-4">
+        <Col xs={24} md={12} className="mb-4" data-testid="chart-data-revenue">
           <LineChart
             title="Revenue"
             data={[11000, 2200, 11500, 21090, 11700, 11400, 11070]}
