@@ -26,7 +26,7 @@ const ChartData = ({
   }
 
   return (
-    <Card>
+    <Card className='h-full'>
       <div className='flex justify-between'>
         <h2 className='font-bold'>{title}</h2>
         <Button size="small">...</Button>
