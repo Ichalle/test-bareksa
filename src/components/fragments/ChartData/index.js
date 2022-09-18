@@ -18,6 +18,10 @@ const ChartData = ({
     labels: labels,
     legend: {
       position: 'bottom'
+    },
+    colors: ['#725E9C', '#5C8F94', '#EBA45E', '#E4EAEB'],
+    dataLabels: {
+      enabled: false
     }
   }
 
@@ -25,7 +29,7 @@ const ChartData = ({
     <Card>
       <div className='flex justify-between'>
         <h2 className='font-bold'>{title}</h2>
-        <Button>...</Button>
+        <Button size="small">...</Button>
       </div>
       <Chart
         options={options}

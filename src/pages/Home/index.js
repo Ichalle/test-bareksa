@@ -73,10 +73,10 @@ const Home = () => {
         </Col>
       </Row>
       <Row>
-        <Col span={6} className="px-4">
+        <Col span={7} className="px-4">
           <FilterCalendar />
         </Col>
-        <Col span={18} className="px-4">
+        <Col span={17} className="px-4">
           <TableData
             title="Orders"
             data={orders}

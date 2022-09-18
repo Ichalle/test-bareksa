@@ -59,6 +59,7 @@ const TableData = ({
       <Table
         columns={columns}
         dataSource={data}
+        pagination={{ position: [] }}
       />
     </>
   )

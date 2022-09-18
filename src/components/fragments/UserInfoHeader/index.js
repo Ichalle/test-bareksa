@@ -25,7 +25,7 @@ const UserInfoHeader = () => {
         style={{
           color: '#000',
           backgroundColor: '#f4f4f4',
-          fontWeight: 'bold'
+          fontWeight: 'bold',
         }}
       >
         RH
@@ -34,8 +34,8 @@ const UserInfoHeader = () => {
       <Dropdown overlay={menu}>
         <div className='px-4 flex items-center cursor-pointer'>
           <div className='mr-4'>
-            <div className='font-semibold text-xl'>Reinhart H</div>
-            <div>Kemang, Jakarta</div>
+            <div className='font-bold text-base'>Reinhart H</div>
+            <div className='text-xs text-gray-400'>Kemang, Jakarta</div>
           </div>
           <DownOutlined />
         </div>

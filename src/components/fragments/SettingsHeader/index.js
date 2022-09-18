@@ -3,7 +3,7 @@ import { SettingOutlined } from '@ant-design/icons';
 import { Button } from 'antd';
 
 const SettingsHeader = () => (
-  <Button type="text" shape="circle" className='mx-2'>
+  <Button type="text" shape="circle">
     <SettingOutlined
       style={{
         fontSize: 16,
