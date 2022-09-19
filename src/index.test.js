@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import Logo from './components/elements/Logo';
+import SettingsHeader from './components/fragments/SettingsHeader';
 import Search from './components/elements/Search';
 import NotificationsHeader from './components/fragments/NotificationsHeader';
-import SettingsHeader from './components/fragments/SettingsHeader';
 
 describe('Main page', () => {
   describe('Logo Header', () => {
